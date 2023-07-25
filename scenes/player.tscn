@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddtt44lrgtjvg"]
+
+[ext_resource type="Script" path="res://script/player.gd" id="1_vleul"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_smmo3"]
+radius = 15.0
+height = 36.0
+
+[node name="player" type="CharacterBody2D"]
+position = Vector2(539, 310)
+script = ExtResource("1_vleul")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_smmo3")
