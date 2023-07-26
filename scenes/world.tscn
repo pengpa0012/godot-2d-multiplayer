@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://2xfd472h00o3"]
+[gd_scene load_steps=7 format=3 uid="uid://2xfd472h00o3"]
 
 [ext_resource type="Script" path="res://script/world.gd" id="1_hmw30"]
 [ext_resource type="PackedScene" uid="uid://ddtt44lrgtjvg" path="res://scenes/player.tscn" id="2_t71fn"]
+[ext_resource type="Resource" uid="uid://d1d6g8d22v4a1" path="res://script/player_1_controls.tres" id="3_ed6sp"]
+[ext_resource type="Resource" uid="uid://qixwyxo8u74a" path="res://script/player_2_controls.tres" id="4_lbvn2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fb67b"]
 size = Vector2(1146, 20)
@@ -50,5 +52,7 @@ shape = SubResource("RectangleShape2D_ruds6")
 
 [node name="player2" parent="." instance=ExtResource("2_t71fn")]
 position = Vector2(718, 323)
+controls = ExtResource("4_lbvn2")
 
 [node name="player" parent="." instance=ExtResource("2_t71fn")]
+controls = ExtResource("3_ed6sp")
