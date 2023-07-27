@@ -1,14 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://h3nkdsyaugjc"]
+[gd_scene load_steps=2 format=3 uid="uid://cf8tbmshm1ixu"]
 
-[ext_resource type="Script" path="res://script/wall.gd" id="1_ai4qf"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g0uxm"]
+size = Vector2(39.5, 826.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3psua"]
-size = Vector2(4, 620)
-
-[node name="Wall" type="Area2D"]
-script = ExtResource("1_ai4qf")
+[node name="wall" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_3psua")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+shape = SubResource("RectangleShape2D_g0uxm")
