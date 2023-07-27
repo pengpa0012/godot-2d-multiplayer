@@ -7,4 +7,5 @@ script = ExtResource("1")
 player_index = 0
 move_left = "ui_left"
 move_right = "ui_right"
-jump = "ui_accept"
+jump = "ui_up"
+shoot = "p1_shoot"
